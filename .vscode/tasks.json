@@ -6,7 +6,10 @@
 			"detail": "Build project using npm run build",
 			"type": "npm",
 			"script": "build",
-			"group": "build",
+			"group": {
+				"isDefault": true,
+				"kind": "build"
+			},
 			"problemMatcher": [
 				"$tsc"
 			],
@@ -39,7 +42,7 @@
 			"label": "npm: lint",
 			"detail": "Runs ESLint on project source files",
 			"type": "npm",
-			"script": "clean",
+			"script": "lint",
 			"group": "build",
 			"presentation": {
 				"echo": true,
@@ -48,9 +51,12 @@
 				"panel": "shared",
 				"showReuseMessage": false,
 				"clear": false
-			}
+			},
+			"problemMatcher": []
 		},
 		{
+			"type": "shell",
+			"command": "echo Project refreshed!",
 			"label": "Refresh",
 			"detail": "Sets the project to a fresh state ready to be executed",
 			"dependsOrder": "sequence",
@@ -69,6 +75,6 @@
 				"showReuseMessage": false,
 				"clear": true
 			}
-		},
+		}
 	]
 }
