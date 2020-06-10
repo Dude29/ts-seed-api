@@ -8,6 +8,7 @@
     "build": "tsc",
     "start": "node build/main.js",
     "clean": "rm -rf build/",
+    "debug": "node --inspect-brk=6969 build/main.js",
     "go": "npm run clean && npm run build && npm run start"
   },
   "keywords": [
