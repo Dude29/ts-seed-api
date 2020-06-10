@@ -11,6 +11,11 @@
     "debug": "node --inspect-brk=6969 build/main.js",
     "go": "npm run clean && npm run build && npm run start"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Dude29/ts-seed"
+  },
+  "license": "MIT",
   "keywords": [
     "tsc",
     "node"
