@@ -6,10 +6,7 @@
 			"detail": "Build project using npm run build",
 			"type": "npm",
 			"script": "build",
-			"group": {
-				"isDefault": true,
-				"kind": "build"
-			},
+			"group": "build",
 			"problemMatcher": [
 				"$tsc"
 			],
@@ -65,6 +62,10 @@
 				"npm: build",
 				"npm: lint"
 			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
 			"problemMatcher": [],
 			"promptOnClose": false,
 			"presentation": {
