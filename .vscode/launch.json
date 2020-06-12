@@ -5,19 +5,34 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "node",
+            "name": "Debug project",
             "request": "launch",
-            "name": "Debug via NPM",
-            "runtimeExecutable": "npm",
-            "runtimeArgs": [
-                "run-script",
-                "debug"
-            ],
+            "runtimeExecutable": "${workspaceFolder}/scripts/start.sh",
+            "console": "integratedTerminal",
             "port": 6969,
+            "runtimeArgs": [
+                "--inspect-brk=6969",
+            ],
             "skipFiles": [
                 "<node_internals>/**"
             ],
+            "type": "node",
             "preLaunchTask": "Refresh"
         },
+        {
+            "name": "Debug project tests",
+            "request": "launch",
+            "runtimeExecutable": "${workspaceFolder}/scripts/test.sh",
+            "console": "integratedTerminal",
+            "port": 6969,
+            "runtimeArgs": [
+                "--inspect-brk=6969",
+            ],
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node",
+            "preLaunchTask": "Refresh"
+        }
     ]
 }
