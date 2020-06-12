@@ -77,6 +77,10 @@
 				"Transpile",
 				"Lint"
 			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
 			"problemMatcher": [],
 			"promptOnClose": false,
 			"presentation": {
