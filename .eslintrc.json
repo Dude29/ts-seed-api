@@ -37,6 +37,12 @@
             "smart"
         ],
         "no-unexpected-multiline": "warn",
+        "max-len": [
+            "warn",
+            {
+                "code": 200
+            }
+        ],
         "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/no-require-imports": "warn"
     }
