@@ -1,2 +1,3 @@
-# Ignore everything that is not in the src folder
-!src/*
+# Ignore everything from the root except the source folder
+/*
+!src/
