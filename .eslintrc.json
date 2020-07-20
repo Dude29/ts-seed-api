@@ -19,15 +19,34 @@
     "rules": {
         "indent": [
             "error",
-            "tab"
+            "tab",
+            {
+                "SwitchCase": 1
+            }
         ],
         "linebreak-style": [
             "error",
             "unix"
         ],
         "quotes": [
-            "error",
+            "warn",
             "single"
-        ]
+        ],
+        "eqeqeq": [
+            "error",
+            "smart"
+        ],
+        "no-unexpected-multiline": "warn",
+        "max-len": [
+            "warn",
+            {
+                "code": 200,
+                "ignoreUrls": true,
+                "ignoreTrailingComments": true,
+                "ignoreRegExpLiterals": true
+            }
+        ],
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/no-require-imports": "warn"
     }
 }
