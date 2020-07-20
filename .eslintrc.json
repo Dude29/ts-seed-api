@@ -29,6 +29,10 @@
             "error",
             "single"
         ],
-        "@typescript-eslint/no-explicit-any": "off"
+        "@typescript-eslint/no-explicit-any": "off",
+        "eqeqeq": [
+            "error",
+            "smart"
+        ]
     }
 }
