@@ -36,6 +36,7 @@
         "eqeqeq": [
             "error",
             "smart"
-        ]
+        ],
+        "@typescript-eslint/no-require-imports": "warn"
     }
 }
