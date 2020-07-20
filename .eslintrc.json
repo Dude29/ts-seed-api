@@ -40,7 +40,10 @@
         "max-len": [
             "warn",
             {
-                "code": 200
+                "code": 200,
+                "ignoreUrls": true,
+                "ignoreTrailingComments": true,
+                "ignoreRegExpLiterals": true
             }
         ],
         "@typescript-eslint/no-explicit-any": "off",
