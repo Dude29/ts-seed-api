@@ -33,7 +33,6 @@ export async function launch() {
 debug.description = `Debug app on default port 6969. Change by passing --port=<number>`
 export async function debug() {
 	const port = argv.port || 6969
-	console.log(port)
 	return run(`node --inspect-brk=${port} build/main.js`)
 }
 

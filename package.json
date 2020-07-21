@@ -6,11 +6,10 @@
   "scripts": {
     "test": "gulp test",
     "build": "gulp",
-    "start": "node build/main.js",
+    "start": "gulp launch",
     "clean": "gulp clean",
-    "debug": "node --inspect-brk=6969 build/main.js",
-    "go": "npm run clean && npm run build && npm run start",
-    "lint": "eslint src/*.{js,ts}"
+    "debug": "gulp debug",
+    "lint": "gulp lint"
   },
   "repository": {
     "type": "git",
