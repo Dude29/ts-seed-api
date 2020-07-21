@@ -1,38 +1,16 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Debug project",
-            "request": "launch",
-            "runtimeExecutable": "${workspaceFolder}/scripts/start.sh",
-            "console": "integratedTerminal",
-            "port": 6969,
-            "runtimeArgs": [
-                "--inspect-brk=6969",
-            ],
-            "skipFiles": [
-                "<node_internals>/**"
-            ],
+            "name": "debug via gulp",
             "type": "node",
-            "preLaunchTask": "Refresh"
-        },
-        {
-            "name": "Debug project tests",
             "request": "launch",
-            "runtimeExecutable": "${workspaceFolder}/scripts/test.sh",
-            "console": "integratedTerminal",
-            "port": 6969,
+            "cwd": "${workspaceFolder}",
+            "runtimeExecutable": "gulp",
             "runtimeArgs": [
-                "--inspect-brk=6969",
+                "debug"
             ],
-            "skipFiles": [
-                "<node_internals>/**"
-            ],
-            "type": "node",
-            "preLaunchTask": "Refresh"
+            "port": 6969
         }
     ]
 }
