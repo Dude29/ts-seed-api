@@ -13,9 +13,7 @@ export async function transpile() {
 	return run('tsc')
 }
 
-export default async function build() {
-	return series(clean, transpile)
-}
+export const build = series(clean, transpile)
 
 export async function testAll() {
 	return run('mocha ./build/test/')
