@@ -1,4 +1,4 @@
-export default function defaultTask(cb: any) {
+export default async function defaultTask() {
 	// place code for your default task here
-	cb();
+	console.log('Gulp\'s default task')
 }
