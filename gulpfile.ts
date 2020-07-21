@@ -5,6 +5,10 @@ function run(command: string) {
 	return cmd(command)()
 }
 
+export async function testAll() {
+	return run('mocha ./build/test/')
+}
+
 export async function clean() {
 	return run('rm -rf build/')
 }
