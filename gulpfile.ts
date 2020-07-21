@@ -1,11 +1,6 @@
-import { series } from 'gulp'
+import run from 'gulp-run-command'
 
-export async function taskA() {
-	console.log('task A')
+export default async function build() {
+	// MUST return the result of the call to run() in gulp >= v4.0
+	return run('tsc')()
 }
-
-async function taskB() {
-	console.log('task B')
-}
-
-export default series(taskA, taskB)
