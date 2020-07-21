@@ -13,6 +13,10 @@ export async function transpile() {
 	return run('tsc')
 }
 
+export async function lint() {
+	return run('eslint .')
+}
+
 export const build = series(clean, transpile)
 
 export async function testAll() {
@@ -23,4 +27,4 @@ export async function launch() {
 	return run('node build/main.js')
 }
 
-export const begin = series(build, launch)
+export default series(build, lint, launch)
