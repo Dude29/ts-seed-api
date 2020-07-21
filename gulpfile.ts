@@ -5,10 +5,6 @@ function run(command: string) {
 	return cmd(command)()
 }
 
-export async function testAll() {
-	return run('mocha ./build/test/')
-}
-
 export async function clean() {
 	return run('rm -rf build/')
 }
@@ -19,4 +15,8 @@ export async function transpile() {
 
 export default async function build() {
 	return series(clean, transpile)
+}
+
+export async function testAll() {
+	return run('mocha ./build/test/')
 }
