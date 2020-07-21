@@ -1,4 +1,5 @@
 import { series } from 'gulp'
+import { argv } from 'yargs'
 import cmd from 'gulp-run-command'
 
 function run(command: string) {
@@ -25,6 +26,13 @@ export async function testAll() {
 
 export async function launch() {
 	return run('node build/main.js')
+}
+
+debug.description = `Debug app on default port 6969. Change by passing --port=<number>`
+export async function debug() {
+	const port = argv.port || 6969
+	console.log(port)
+	return run(`node --inspect-brk=${port} build/main.js`)
 }
 
 export default series(build, lint, launch)
