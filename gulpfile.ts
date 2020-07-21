@@ -1,4 +1,11 @@
-export default async function defaultTask() {
-	// place code for your default task here
-	console.log('Gulp\'s default task')
+import { series } from 'gulp'
+
+export async function taskA() {
+	console.log('task A')
 }
+
+async function taskB() {
+	console.log('task B')
+}
+
+export default series(taskA, taskB)
