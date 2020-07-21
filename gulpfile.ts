@@ -20,3 +20,7 @@ export default async function build() {
 export async function testAll() {
 	return run('mocha ./build/test/')
 }
+
+export async function launch() {
+	return run('node build/main.js')
+}
