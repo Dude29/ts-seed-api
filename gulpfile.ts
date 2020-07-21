@@ -22,3 +22,5 @@ export async function testAll() {
 export async function launch() {
 	return run('node build/main.js')
 }
+
+export const begin = series(build, launch)
