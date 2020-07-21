@@ -20,10 +20,12 @@ export async function lint() {
 
 export const build = series(clean, transpile)
 
+testAll.description = 'Runs all the apps tests'
 export async function testAll() {
 	return run('mocha ./build/test/')
 }
 
+launch.description = 'Runs the app'
 export async function launch() {
 	return run('node build/main.js')
 }
