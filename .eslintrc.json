@@ -78,6 +78,14 @@
         "no-trailing-spaces": "warn",
         "no-unneeded-ternary": "warn",
         "no-whitespace-before-property": "error",
+        "object-curly-newline": [
+            "warn",
+            {
+                "minProperties": 4,
+                "multiline": true,
+                "consistent": false
+            }
+        ],
         "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/no-require-imports": "warn"
     }
