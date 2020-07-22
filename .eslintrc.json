@@ -73,6 +73,7 @@
         "no-new-object": "warn",
         "no-plusplus": "warn",
         "no-trailing-spaces": "warn",
+        "no-unneeded-ternary": "warn",
         "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/no-require-imports": "warn"
     }
