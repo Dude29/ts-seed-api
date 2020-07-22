@@ -124,6 +124,7 @@
         "no-eq-null": "error",
         "no-floating-decimal": "warn",
         "no-implicit-coercion": "warn",
+        "no-return-await": "warn",
         "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/no-require-imports": "warn"
     }
