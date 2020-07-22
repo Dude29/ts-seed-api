@@ -113,7 +113,7 @@
                 "avoidQuotes": true
             }
         ],
-        "eslint prefer-const": "warn",
+        "prefer-const": "warn",
         "default-case-last": "warn",
         "no-else-return": [
             "warn",
