@@ -143,6 +143,12 @@
             }
         ],
         "key-spacing": "warn",
+        "no-multi-spaces": [
+            "warn",
+            {
+                "ignoreEOLComments": true
+            }
+        ],
         "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/no-require-imports": "warn"
     }
