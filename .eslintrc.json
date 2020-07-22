@@ -129,6 +129,10 @@
         "no-with": "warn",
         "require-await": "warn",
         "wrap-iife": "warn",
+        "comma-dangle": [
+            "warn",
+            "always-multiline"
+        ],
         "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/no-require-imports": "warn"
     }
