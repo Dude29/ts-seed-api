@@ -46,6 +46,14 @@
                 "ignoreRegExpLiterals": true
             }
         ],
+        "object-curly-spacing": [
+            "warn",
+            "always",
+            {
+                "arraysInObjects": true,
+                "objectsInObjects": true
+            }
+        ],
         "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/no-require-imports": "warn"
     }
