@@ -58,6 +58,7 @@
             "warn",
             "always"
         ],
+        "no-lonely-if": "warn",
         "lines-between-class-members": "error",
         "func-call-spacing": ["error", "never"],
         "valid-typeof": "error", 
