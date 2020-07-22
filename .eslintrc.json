@@ -134,6 +134,7 @@
             "always-multiline"
         ],
         "curly": "warn",
+        "space-infix-ops": "warn",
         "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/no-require-imports": "warn"
     }
