@@ -114,6 +114,7 @@
             }
         ],
         "eslint prefer-const": "warn",
+        "default-case-last": "warn",
         "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/no-require-imports": "warn"
     }
