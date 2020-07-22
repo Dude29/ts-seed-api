@@ -121,6 +121,7 @@
                 "allowElseIf": false
             }
         ],
+        "no-eq-null": "error",
         "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/no-require-imports": "warn"
     }
