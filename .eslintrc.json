@@ -106,6 +106,13 @@
             }
         ],
         "no-var": "error",
+        "object-shorthand": [
+            "warn",
+            "methods",
+            {
+                "avoidQuotes": true
+            }
+        ],
         "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/no-require-imports": "warn"
     }
