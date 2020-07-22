@@ -95,7 +95,11 @@
         "prefer-exponentiation-operator": "warn",
         "space-before-function-paren": [
             "warn",
-            "never"
+            {
+                "anonymous": "always",
+                "named": "never",
+                "asyncArrow": "always"
+            }
         ],
         "spaced-comment": "warn",
         "arrow-spacing": "warn",
