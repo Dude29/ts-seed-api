@@ -71,6 +71,7 @@
             }
         ],
         "no-new-object": "warn",
+        "no-plusplus": "warn",
         "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/no-require-imports": "warn"
     }
