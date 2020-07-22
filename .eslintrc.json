@@ -54,6 +54,10 @@
                 "objectsInObjects": true
             }
         ],
+        "eol-last": [
+            "warn",
+            "always"
+        ],
         "valid-typeof": "error", 
         "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/no-require-imports": "warn"
