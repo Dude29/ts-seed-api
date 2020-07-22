@@ -60,8 +60,11 @@
         ],
         "no-lonely-if": "warn",
         "lines-between-class-members": "error",
-        "func-call-spacing": ["error", "never"],
-        "valid-typeof": "error", 
+        "func-call-spacing": [
+            "error",
+            "never"
+        ],
+        "valid-typeof": "error",
         "no-mixed-operators": "warn",
         "no-multiple-empty-lines": [
             "warn",
