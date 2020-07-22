@@ -97,6 +97,7 @@
             "warn",
             "never"
         ],
+        "spaced-comment": "warn",
         "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/no-require-imports": "warn"
     }
