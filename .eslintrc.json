@@ -62,6 +62,7 @@
         "lines-between-class-members": "error",
         "func-call-spacing": ["error", "never"],
         "valid-typeof": "error", 
+        "no-mixed-operators": "warn",
         "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/no-require-imports": "warn"
     }
