@@ -127,6 +127,7 @@
         "no-return-await": "warn",
         "no-labels": "error",
         "no-with": "warn",
+        "require-await": "error",
         "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/no-require-imports": "warn"
     }
