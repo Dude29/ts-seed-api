@@ -106,7 +106,7 @@
         "no-duplicate-imports": [
             "error",
             {
-                "includeExports": true
+                "includeExports": false
             }
         ],
         "no-var": "error",
