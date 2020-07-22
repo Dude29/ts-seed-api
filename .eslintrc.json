@@ -126,7 +126,7 @@
         "no-implicit-coercion": "warn",
         "no-return-await": "warn",
         "no-labels": "error",
-        "no-with": "off",
+        "no-with": "warn",
         "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/no-require-imports": "warn"
     }
