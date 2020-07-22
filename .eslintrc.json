@@ -63,6 +63,13 @@
         "func-call-spacing": ["error", "never"],
         "valid-typeof": "error", 
         "no-mixed-operators": "warn",
+        "no-multiple-empty-lines": [
+            "warn",
+            {
+                "max": 3,
+                "maxEOF": 2
+            }
+        ],
         "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/no-require-imports": "warn"
     }
