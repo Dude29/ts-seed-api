@@ -86,6 +86,12 @@
                 "consistent": false
             }
         ],
+        "object-property-newline": [
+            "warn",
+            {
+                "allowAllPropertiesOnSameLine": true
+            }
+        ],
         "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/no-require-imports": "warn"
     }
