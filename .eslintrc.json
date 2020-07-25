@@ -16,6 +16,7 @@
     "plugins": [
         "@typescript-eslint"
     ],
+    "reportUnusedDisableDirectives": true,
     "rules": {
         "indent": [
             "error",
