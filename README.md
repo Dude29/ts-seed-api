@@ -1,3 +1,3 @@
 # ts-seed
 
-Project seed for Node.js typescript projects
+Project seed for node.js API's using Typescript
