@@ -1,4 +1,4 @@
-import { series } from 'gulp'
+import { series, task } from 'gulp'
 import { argv } from 'yargs'
 import cmd from 'gulp-run-command'
 
@@ -35,5 +35,7 @@ export async function debug() {
 	const port = argv.port || 6969
 	return run(`node --inspect-brk=${port} build/main.js`)
 }
+
+task('build-test', series(build, testAll))
 
 export default series(build, lint, launch)
