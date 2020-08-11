@@ -13,3 +13,5 @@ api.use('/books', books)
 api.listen(port, () => {
 	console.log(`Example app listening at http://localhost:${port}`)
 })
+
+export default api;

@@ -1,7 +1,7 @@
 import { describe } from 'mocha'
 import chai, { expect } from 'chai'
 import chaiHttp from 'chai-http'
-import { api } from '../main'
+import api from '../main'
 
 chai.use(chaiHttp)
 
