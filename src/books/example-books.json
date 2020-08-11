@@ -1,0 +1,17 @@
+[
+	{
+		"title": "12 Rules for Life",
+		"author": "Jordan Peterson",
+		"read": false
+	},
+	{
+		"title": "The Archetypes and The Collective Unconscious",
+		"author": "Carl Gustav Jung",
+		"read": false
+	},
+	{
+		"title": "Clean Coder, The: A Code of Conduct for Professional Programmers",
+		"author": "Robert C. Martin",
+		"read": true
+	}
+]
