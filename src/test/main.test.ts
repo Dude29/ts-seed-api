@@ -1,15 +1,23 @@
-import { describe, it } from 'mocha';
-// mocha has no built in assertions so they must be included
-import { expect } from 'chai';
-import { add } from '../main';
+import { describe } from 'mocha'
+import chai, { expect } from 'chai'
+import chaiHttp from 'chai-http'
+import { api } from '../main'
 
-describe('Add', () => {
-	describe('#add()', () => {
-		it('should sum the operands', () => {
-			expect(add(5, 6)).to.equal(11);
-			expect(add(7, 2)).to.equal(9);
-			expect(add(46, -69)).to.equal(-23);
-			expect(add(69, 351)).to.equal(420);
-		});
-	});
-});
+chai.use(chaiHttp)
+
+describe('API', () => {
+
+	describe('/', () => {
+
+		it('GET / should respond with 200 OK and a body of: "Hello World!"', async () => {
+			const response = await chai.request(api)
+				.get('/')
+				.send()
+
+			expect(response).to.have.status(200)
+			expect(response.text).to.equal('Hello World!')
+		})
+
+	})
+
+})

@@ -1,7 +1,12 @@
-import logger from './logger'
+import express from 'express'
 
-logger.info('Hi! This is a project seed');
+export const api = express()
+const port = 3000
 
-export function add(na: number, nb: number): number {
-	return na + nb;
-}
+api.get('/', (req, res) => {
+	res.end('Hello World!')
+})
+
+api.listen(port, () => {
+	console.log(`Example app listening at http://localhost:${port}`)
+})
