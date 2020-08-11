@@ -20,9 +20,20 @@ export async function lint() {
 
 export const build = series(clean, transpile)
 
+testApiConnectivity.description = 'Runs basic API connectivity tests'
+export async function testApiConnectivity() {
+	return run('mocha ./build/test/')
+}
+
+task('test-books', testBooks)
+testBooks.description = 'Runs all tests for the books domain'
+export async function testBooks() {
+	return run('mocha build/books/test')
+}
+
 testAll.description = 'Runs all the apps tests'
 export async function testAll() {
-	return run('mocha ./build/test/')
+	return series(testApiConnectivity, testBooks)
 }
 
 launch.description = 'Runs the app'
