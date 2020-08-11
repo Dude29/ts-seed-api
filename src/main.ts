@@ -1,12 +1,12 @@
 import express from 'express'
 
-const app = express()
+export const api = express()
 const port = 3000
 
-app.get('/', (req, res) => {
+api.get('/', (req, res) => {
 	res.end('Hello World!')
 })
 
-app.listen(port, () => {
+api.listen(port, () => {
 	console.log(`Example app listening at http://localhost:${port}`)
 })
